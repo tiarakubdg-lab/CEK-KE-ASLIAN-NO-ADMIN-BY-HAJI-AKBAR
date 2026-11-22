@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080704;
+  color: #fff4d0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 0%, #70500d55, transparent 40%),
+    radial-gradient(circle at 0% 100%, #8b641c22, transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: #080704;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .8s, visibility .8s;
+}
+
+#loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-title {
+  font-family: Orbitron;
+  font-size: 19px;
+  font-weight: 800;
+  color: #f8d875;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loading-line {
+  width: 220px;
+  height: 4px;
+  background: #49350e;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #9b6b0a, #fff0a4, #d49c25);
+  animation: loading 2s forwards;
+}
+
+#loader p {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 14px;
+  color: #c5a653;
+}
+
+@keyframes loading {
+  to { width: 100%; }
+}
+
+header {
+  text-align: center;
+  padding: 45px 15px 30px;
+  border-bottom: 1px solid #a47a28;
+  background: linear-gradient(180deg, #36260988, transparent);
+}
+
+.top-label {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid #d8ac48;
+  color: #ffe29a;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+header h1 {
+  font-family: Orbitron;
+  font-size: clamp(25px, 7vw, 42px);
+  font-weight: 800;
+  background: linear-gradient(90deg, #a16d12, #fff4b4, #d49c2e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 25px #d5a33b44;
+}
+
+header h2 {
+  color: #d8ae51;
+  font-family: Orbitron;
+  font-size: 18px;
+  letter-spacing: 7px;
+  margin-top: 5px;
+}
+
+header p {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #b89a58;
+  margin-top: 13px;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px 15px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.crown {
+  font-size: 38px;
+  color: #f5d477;
+}
+
+.welcome h2 {
+  font-family: Orbitron;
+  color: #f2d17a;
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.welcome p {
+  color: #bcb29a;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.gold-line {
+  height: 1px;
+  width: 80%;
+  margin: 20px auto;
+  background: linear-gradient(90deg, transparent, #e5bc5e, transparent);
+}
+
+.main-admin, .admin-section {
+  margin-top: 20px;
+}
+
+.main-admin > h3, .section-title {
+  text-align: center;
+  color: #f1d17e;
+  font-family: Orbitron;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.admin-card {
+  background: linear-gradient(140deg, #30220b, #100e09, #3b2a0b);
+  border: 1px solid #bd913b;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 0 22px #c38b2730;
+  margin-bottom: 15px;
+}
+
+.admin-info h3 {
+  color: #ffe29b;
+  font-size: 17px;
+}
+
+.admin-info p {
+  font-size: 10px;
+  color: #c6a75e;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.status {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #43dc78;
+  box-shadow: 0 0 10px #43dc78;
+  margin-right: 7px;
+}
+
+.number {
+  font-family: Orbitron;
+  color: #f8dc91;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  overflow-wrap: anywhere;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 11px 5px;
+  border: 1px solid #d9ad4f;
+  background: linear-gradient(120deg, #6f4c0e, #d4a83e, #75500f);
+  color: #fff4d2;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+.wa-btn {
+  background: linear-gradient(120deg, #075d31, #159c55);
+  border-color: #38d77b;
+}
+
+.wa-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.wa-icon::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  bottom: -3px;
+  left: -2px;
+  border-left: 2px solid white;
+  transform: rotate(25deg);
+}
+
+.admin-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: .65s ease;
+  background: linear-gradient(130deg, #241a09, #100e09, #2c2009);
+  border: 1px solid #846323;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+}
+
+.admin-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.admin-item:hover {
+  border-color: #ffe09a;
+  box-shadow: 0 0 17px #d5a33b35;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-top h3 {
+  font-size: 14px;
+  color: #f5d990;
+}
+
+.admin-top span {
+  font-size: 9px;
+  color: #d6b766;
+  border: 1px solid #80601d;
+  padding: 4px 8px;
+}
+
+.admin-item .number {
+  font-size: 15px;
+  margin: 17px 0;
+}
+
+.admin-item .actions button {
+  min-height: 37px;
+}
+
+.warning {
+  margin: 35px 0;
+  padding: 20px;
+  border: 1px solid #a17a2b;
+  border-radius: 9px;
+  background: #271b0880;
+}
+
+.warning h3 {
+  color: #ffcf65;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.warning p {
+  color: #c7bda6;
+  font-size: 11px;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #846323;
+  background: #120e06;
+}
+
+footer h3 {
+  color: #f0d07b;
+  font-family: Orbitron;
+  font-size: 13px;
+}
+
+footer p {
+  color: #a99461;
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+.footer-small {
+  letter-spacing: 3px;
+}
+
+#toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  background: #d6ad52;
+  color: #171006;
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-size: 12px;
+  transition: .4s;
+  z-index: 1000;
+}
+
+#toast.show {
+  transform: translate(-50%, 0);
+}
+
+@media(max-width:400px) {
+  .number { font-size: 14px; }
+  .admin-card { padding: 16px; }
+  button { font-size: 9px; }
+}
