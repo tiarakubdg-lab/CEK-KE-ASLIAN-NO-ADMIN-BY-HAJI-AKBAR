@@ -2,79 +2,68 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NO ADMIN - HAJI AKBAR DEVELOPER</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO ADMIN | HAJI AKBAR DEVELOPER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="loader">
-    <div class="loader-title">HAJI AKBAR DEVELOPER</div>
-    <div class="loading-line">
-      <div class="loading-progress"></div>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <span>HAJI AKBAR DEVELOPER</span>
+            <div class="loading-line"></div>
+        </div>
     </div>
-    <p>PREPARING ADMIN CENTER...</p>
-  </div>
 
-  <header>
-    <div class="top-label">ALL OWN PT</div>
-    <h1>HAJI AKBAR</h1>
-    <h2>DEVELOPER</h2>
-    <p>OFFICIAL ADMIN CENTER</p>
-  </header>
+    <header>
+        <div class="brand">✦ HAJI AKBAR ✦</div>
+        <p>DEVELOPER OFFICIAL</p>
+    </header>
 
-  <main>
-    <section class="welcome">
-      <span class="crown">♛</span>
-      <h2>NO ADMIN ADMIN</h2>
-      <p>Silakan hubungi admin resmi kami untuk berjaga-jaga dalam transaksi.</p>
-      <div class="gold-line"></div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="gold-icon">♛</div>
+            <h1>NO ADMIN ADMIN</h1>
+            <h2>HAJI AKBAR DEVELOPER</h2>
+            <p>
+                Silakan hubungi admin resmi kami
+                untuk membantu kebutuhan transaksi Anda.
+            </p>
+            <div class="status">
+                <span></span> ADMIN CONTACT CENTER
+            </div>
+        </section>
 
-    <section class="main-admin">
-      <h3>✦ ADMIN UTAMA ✦</h3>
-      <div class="admin-card">
-        <div class="admin-info">
-          <span class="status"></span>
-          <h3>HAJI AKBAR</h3>
-          <p>ADMIN UTAMA</p>
+        <div class="section-title">
+            <h2>✦ DAFTAR ADMIN ✦</h2>
+            <p>Pilih admin untuk menghubungi melalui WhatsApp</p>
         </div>
-        <div class="number">083182386351</div>
-        <div class="actions">
-          <button onclick="copyNumber('083182386351')">SALIN NOMOR</button>
-          <button class="wa-btn" onclick="chatWA('083182386351')">
-            <span class="wa-icon"></span> WHATSAPP
-          </button>
-        </div>
-      </div>
-    </section>
 
-    <section class="admin-section">
-      <h3 class="section-title">✦ DAFTAR ADMIN RESMI ✦</h3>
-      <div id="admin-list"></div>
-    </section>
+        <section class="admin-container" id="adminList">
+            <!-- Admin dimunculkan melalui JavaScript -->
+        </section>
 
-    <section class="warning">
-      <h3>⚠ PERHATIAN TRANSAKSI</h3>
-      <p>
-        Pastikan Anda menghubungi nomor admin yang tertera
-        di website ini. Selalu periksa kembali identitas admin
-        sebelum melakukan transaksi.
-      </p>
-      <p>Jangan mudah percaya dengan nomor yang mengatasnamakan admin kami.</p>
-    </section>
-  </main>
+        <section class="warning">
+            <h3>⚠ PERHATIAN PENTING</h3>
+            <p>
+                Selalu pastikan nomor WhatsApp sesuai dengan
+                daftar admin resmi di website ini sebelum
+                melakukan transaksi.
+            </p>
+            <p>
+                Jangan melakukan pembayaran kepada nomor
+                yang tidak terdaftar.
+            </p>
+        </section>
+    </main>
 
-  <footer>
-    <div class="gold-line"></div>
-    <h3>HAJI AKBAR DEVELOPER</h3>
-    <p>OFFICIAL ADMIN CENTER © 2026</p>
-    <p class="footer-small">TRUST • SAFETY • RESPONSIBILITY</p>
-  </footer>
+    <footer>
+        <div class="footer-logo">HAJI AKBAR</div>
+        <p>DEVELOPER OFFICIAL</p>
+        <p>© 2026 ALL RIGHTS RESERVED</p>
+    </footer>
 
-  <div id="toast">Nomor berhasil disalin!</div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
