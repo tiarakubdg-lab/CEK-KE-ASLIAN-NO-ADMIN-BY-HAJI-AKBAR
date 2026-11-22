@@ -9,7 +9,7 @@ const admins = [
   { name: "RIZKY SHOPEE", number: "085712297033" },
   { name: "ALTOP", number: "085738872257" },
   { name: "TEBEW MARKET", number: "085712782628" },
-  { name: "ADMIN 10", number: "088272120427" },
+  { name: "RARA STR", number: "088272120427" },
   { name: "PIRA STORE", number: "083159083375" }
 ];
 
